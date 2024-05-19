@@ -58,7 +58,7 @@ export default function Home() {
                 {[1, 2, 3, 4, 5].map((value) => (
                   <button
                     type="button"
-                    className={`h-16 w-16 flex-row items-center justify-center rounded-full text-2xl font-medium hover:bg-orange-500 ${value <= hoverRating ? "bg-orange text-light-grey text-black" : isRated && value <= rating ? "text-light-grey bg-white text-black" : "text-light-grey bg-gray-700/50"}`}
+                    className={`h-16 w-16 flex-row items-center justify-center rounded-full text-2xl font-medium hover:bg-orange-500 ${value <= hoverRating ? "bg-orange text-black" : isRated && value <= rating ? "bg-white text-black" : "text-light-grey bg-gray-700/50"}`}
                     key={value}
                     onMouseEnter={() => setHoverRating(value)}
                     onClick={() => {
